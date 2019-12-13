@@ -1,6 +1,8 @@
 #Color Animation Utilities for Indigo Domo and Hue Lights
 #Uses the Hue Lights plugin from Nathan Sheldon Software
 
+#Add to : /Library/Python/2.7/site-packages/
+
 #Defines Site Speciic Configurations like Bulb ID Numbers
 #Defines Sequence Lists for Animations and Brightness
 #Defines Functions for Colors and Animation
