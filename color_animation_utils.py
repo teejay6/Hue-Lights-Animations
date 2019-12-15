@@ -5,9 +5,11 @@
 
 #Defines Site Speciic Configurations like Bulb ID Numbers
 #Defines Sequence Lists for Animations and Brightness
-#Defines Functions for Colors and Animation
+#Defines Functions for Colors and Animation - to be implemented at a later date
 
 # ---> START: SITE SPECIFIC CONFIGURATION ################################################
+
+#********* USER CONFIGURATION REQUIRED START *********
 
 # Define Lists of BULB ID's in Sequence Order
 
@@ -96,10 +98,38 @@ bulb_list_office_test_2 = [
 	345799647,
 	]		
 
+#********* USER CONFIGURATION REQUIRED END ***********
 
 # ---> END: SITE SPECIFIC CONFIGURATION ##################################################
 
 #COLOR LISTS
+
+#Color Lists for Testing
+color_list_mixed_test = [
+	"RED",
+	"red",
+	"Green",
+	"bLuE",
+	"blue",
+	"Rose",
+	"spring green",
+	"springgreen",
+	"Blah",
+	"00ffff#",
+	"#00ff00",
+	"#00ff00ff00"	
+	"000ff00",
+	"#00FF0",
+	[0,0,255,0],
+	[0,255,255],
+	[500,-2,65],
+	[0,255,127],
+	"#0000ZZ",
+	"#DA70D6",
+	"#FF00FF",
+	]
+
+#RGB Color Wheel - Primary, Secondary & Tertiary Colors - https://www.1728.org/RGB.htm
 color_list_rgb_primary = [
 	"red",
 	"lime",
@@ -115,7 +145,7 @@ color_list_rgb_secondary = [
 	"magenta",	
 	]
 
-#RGB Color Wheel - Primary, Secondary & Tertiary Colors - https://www.1728.org/RGB.htm	
+	
 color_list_rgb_tertiary = [
 	"#FF0000",	#RED - Primary color
 	"#FF7F00",	#ORANGE - Tertiary color
