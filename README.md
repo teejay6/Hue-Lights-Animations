@@ -4,6 +4,9 @@ These files are a set of python scripts to animate Philips Hue Lights within the
 
 I am currently using 6 Hue LED Color Light Strips for Christmas lights that are installed under the eaves of my roof, but you can modify the script to include any Color Hue light. The script animates the lights so they can change color, create a rainbow, chase, fill, and any other animation you can think of (and reproduce in a list comprehension).
 
+Here is a video of the animation:
+https://drive.google.com/file/d/1S_B8rQ3lU4C0CFzvMx9KB8JZQhUy30in/view?usp=sharing
+
 
 CONFIGURATION:
 Site Package Configuration File 2: color_animation_utils.py
