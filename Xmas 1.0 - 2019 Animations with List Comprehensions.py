@@ -27,7 +27,11 @@ color_name_dict = colors.cnames
 #COLOR LISTS
 
 #COLOR LIST INITIAL SELECTION
+
+#********* USER CONFIGURATION REQUIRED START ********* 
 color_list_initial  = list(cau.color_list_rgb_secondary)
+#********* USER CONFIGURATION REQUIRED END ***********
+
 color_list_i = list(color_list_initial)
 
 #BULB LISTS
@@ -35,7 +39,11 @@ color_list_i = list(color_list_initial)
 
 #BULB LIST INITIAL SELECTIONS	
 #bulb_list_initial = list(cau.bulb_list_office_R2L_6)
+
+#********* USER CONFIGURATION REQUIRED START *********
 bulb_list_initial = list(cau.bulb_list_ls_out_holiday)
+#********* USER CONFIGURATION REQUIRED END ***********
+
 bulb_list = list(bulb_list_initial)
 
 #The Number of Color Names needs to be greater than the Number of Bulbs
@@ -686,12 +694,19 @@ indigo.server.log("================= R O U T I N E   S T A R T ============")
 title_routine_set = "Sequences - Animation"
 
 #Timing Variables
+
+#********* USER CONFIGURATION REQUIRED START *********
 ramp_rate = 2
 delay_margin = 5
+#********* USER CONFIGURATION REQUIRED END ***********
 
 #TIME - Define Minutes for while loop
+
+#********* USER CONFIGURATION REQUIRED START *********
 minutes_for_while_loop = 300
 #minutes_for_while_loop = 60
+#********* USER CONFIGURATION REQUIRED END ***********
+
 time_end_loop = time.time() + 60 * minutes_for_while_loop
 
 #Timing Initialization
@@ -700,10 +715,15 @@ start_time_temp = time.time()
 print_start_elapsed_time(title_routine_set)
 
 #Bulb List
+
+#********* USER CONFIGURATION REQUIRED START *********
 bulb_list = list(cau.bulb_list_ls_out_holiday)
 #bulb_list = list(cau.bulb_list_office_R2L_6)
+#********* USER CONFIGURATION REQUIRED END ***********
 
 #Color List Initial
+
+#********* USER CONFIGURATION REQUIRED START *********
 #color_list = list(color_list_initial)
 #color_list = list(color_list_hex_6)
 #color_list = cau.color_list_rgb_tertiary
@@ -712,6 +732,7 @@ color_list = cau.color_list_rgb_secondary
 #color_list = color_list_mixed_test
 #color_list = color_list_hex_6
 #color_list = list(color_list_halloween_test_1)
+#********* USER CONFIGURATION REQUIRED END ***********
 
 #Color Name Conversion to Hex values, and Color List Conversion to [R,G,B] and Print
 color_list_rgb = []
@@ -733,6 +754,8 @@ color_list_total = len(color_list_rgb)
 list_comp_color_all_bulbs = [[i] * bulb_list_total for i in range(bulb_list_total)]
 
 #Color List Index Nest
+#********* USER CONFIGURATION REQUIRED START *********
+# Note: this sequence will work correctly the first time you use the program, so you don't have to change it initially
 color_list_index_nested = (
 
 	color_list_sequence_all_0_to_i
@@ -748,6 +771,7 @@ color_list_index_nested = (
 	+ color_list_sequence_all_i_to_0
 
 	)	
+#********* USER CONFIGURATION REQUIRED END ***********
 
 #Color List Indexed Calculations
 color_list_index_nested_total = len(color_list_index_nested)
